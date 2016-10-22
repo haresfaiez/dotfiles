@@ -37,6 +37,7 @@ PATH=$PATH:${JBOSS_FORGE_HOME}/bin
 PATH=${PATH}:/opt/apache-maven/bin:/opt/apache-archiva/bin:/opt/nexus/bin:/home/faiez/bin/
 PATH="${PATH}:/usr/local/heroku/bin"
 PATH="${PATH}:/home/faiez/.config/composer/vendor/bin/"
+PATH="${PATH}:/home/faiez/lab/typora/usr/bin/"
 export PATH
 
 # Tmux
@@ -60,6 +61,8 @@ alias emacs='emacs -nw'
 alias exercism='/home/faiez/lab/exercism/cmd-client/bin/exercism'
 alias composer='php /home/faiez/lab/peaksource/composer/composer.phar'
 alias thesaurus='aiksaurus'
+alias prettyJson='python -mjson.tool'
+alias drafts='cd lab/jekyll/haresfaiez.github.io/_drafts/'
 
 alias myapp-composer="docker run --privileged=true --volumes-from myapp-data --rm dylanlindgren/docker-laravel-composer"
 
