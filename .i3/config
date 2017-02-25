@@ -8,13 +8,13 @@ focus_follows_mouse  no
 #don't move to neighbouring screen with hjkl
 force_focus_wrapping yes
 
-set $blue #005588
-set $gray1 #1A3952
-set $gray2 #122839
+set $bg #17202a
+set $bg-hover #273746
+set $text #d5d8dc
 
-client.focused            $gray1   $gray1   #FFFFFF   #333333
-client.focused_inactive   $gray2   $gray2   #FFFFFF   #000000
-client.unfocused          $gray2   $gray2   #FFFFFF   #000000
+client.focused            $bg-hover   $bg-hover   $text   #154360
+client.focused_inactive   $bg-hover   $bg-hover   $text   #17202a
+client.unfocused          $bg   $bg   $text   #000000
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -140,10 +140,12 @@ bar {
         status_command ~/.i3/bin/conky-wrapper
         colors {
                 statusline #717A81
-                background #060A0D
-                focused_workspace  $gray2 $gray2 #FFFFFF
-                inactive_workspace $gray1 $gray1 #122839
+                background $bg
+                focused_workspace  $bg-hover  $bg-hover $text
+                inactive_workspace $bg $bg $text
         }
 }
 
 exec --no-startup-id feh --bg-fill ~/Pictures/44840_anime_scenery_anime_cityscape.jpg
+
+# setxkbmap -layout "pl,pl" -variant "dvp," -option "caps:swapescape,grp:sclk_toggle"

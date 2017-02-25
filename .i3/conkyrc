@@ -9,15 +9,15 @@ pad_percents	  3
 override_utf8_locale yes
 
 TEXT
-,[{"full_text": " ❤ $acpitemp°C [$cpu%] ","color": "\#DBEC65"},
-  {"full_text": " ≣ [$membar] ", "color":"\#1AE7EB"},
-  ${if_up wlan0}{"full_text": " ≈ ${wireless_essid wlan0} [${wireless_link_qual_perc wlan0}%] ","color":"\#1AE7EB"},
-  $else${if_up ppp0}{"full_text": " ≈ orange ","color":"\#1AE7EB"},
-  $else${if_up eth0}{"full_text": " ≈ eth0 ","color":"\#1AE7EB"},
-  $else{"full_text": " ≈ no connection ","color":"\#1AE7EB"},$endif$endif$endif
-  {"full_text": " ☇ [$battery_percent%] ","color":"\#1AE7EB"},
-  {"full_text": " ♪ [$mixer%] ", "color":"\#43F7A1"},
-  {"full_text": " ${time WW%V.%u, %a %d %b}", "color":"\#FFFFFF"},
-  {"full_text": " ${time %H:%M} ", "color":"\#FFFFFF"}
+,[{"full_text": " ❤ $acpitemp°C [$cpu%] ","color": "\#CE4045"},
+  {"full_text": " ≣ [$membar] ", "color":"\#55B5DB"},
+  {"full_text": " ☇ [$battery_percent%] ","color":"\#B6DA3C"},
+  ${if_up wlan0}{"full_text": " ≈ ${wireless_essid wlan0} [${wireless_link_qual_perc wlan0}%] ","color":"\#d5d8dc"},
+  $else${if_up ppp0}{"full_text": " ≈ orange ","color":"\#d5d8dc"},
+  $else${if_up eth0}{"full_text": " ≈ eth0 ","color":"\#d5d8dc"},
+  $else{"full_text": " ≈ no connection ","color":"\#d5d8dc"},$endif$endif$endif
+  {"full_text": " ♪ [$mixer%] ", "color":"\#d5d8dc"},
+  {"full_text": " ${time WW%V.%u, %a %d %b}", "color":"\#d5d8dc"},
+  {"full_text": " ${time %H:%M} ", "color":"\#d5d8dc"}
 ]
 
